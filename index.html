@@ -25,19 +25,11 @@
       integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
       crossorigin="anonymous"
     />
-    <style>
-      h1 {
-        color: white;
-      }
-      img {
-        max-width: 30%;
-      }
-    </style>
   </head>
 
   <body>
-    <div id="app" class="mt-5 text-center">
-      <h1 v-bind:style="{fontSize:medium}">{{ message }}</h1>
+    <div id="app" class="mt-5 text-center bg-dark">
+      <h1 class="display-1" class="bg-danger">{{ message }}</h1>
       <img :src="image" alt="" />
     </div>
 
