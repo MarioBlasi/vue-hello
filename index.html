@@ -25,11 +25,20 @@
       integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
       crossorigin="anonymous"
     />
+    <style>
+      h1 {
+        color: white;
+      }
+      img {
+        max-width: 30%;
+      }
+    </style>
   </head>
+
   <body>
-    <div id="app" class="">
-      <h1>{{ message }}</h1>
-      <img src="image" alt="Vue sfondo" />
+    <div id="app" class="mt-5 text-center">
+      <h1 v-bind:style="{fontSize:medium}">{{ message }}</h1>
+      <img :src="image" alt="" />
     </div>
 
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
